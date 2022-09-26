@@ -1,0 +1,14 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.anthony.wolvercotebus.MainActivity"
+    >
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="108"
+        android:title="@string/action_about"
+        android:onClick="onAboutMenu"
+        />
+<!--    app:showAsAction="never"-->
+</menu>

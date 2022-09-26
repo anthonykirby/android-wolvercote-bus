@@ -1,0 +1,11 @@
+/*.iml
+/.gradle/
+/local.properties
+/build
+/captures
+/.idea/vcs.xml
+/.signing/
+/.idea/
+/import-summary.txt
+/app/libs/
+/app/release/

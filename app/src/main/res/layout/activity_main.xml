@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Oxford City" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Wolvercote" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayout"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutStops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPager"
+        android:orientation="vertical" >
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewTitleInbound1"-->
+<!--            style="@android:style/TextAppearance.Medium"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/titleInbound" />-->
+
+<!--        <TableLayout-->
+<!--            android:id="@+id/tableInbound1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/textViewTitleAway" />-->
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+      <TextView
+        android:id="@+id/textViewLastUpdated"
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--        android:layout_alignParentBottom="true"-->
+
+            <Button
+                android:id="@+id/buttonRefresh"
+                style="@android:style/TextAppearance.Small"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:text="@string/refresh_button_working"
+                android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

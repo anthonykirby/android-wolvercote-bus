@@ -1,0 +1,13 @@
+{
+  "340001008SOU": {
+    "timestamp": "2021-12-02T22:07:24+00:00",
+    "location_id": 14892,
+    "description": "",
+    "atco_code": "340001008SOU",
+    "naptan_code": "oxfadtgp",
+    "time": "22:07:24",
+    "service_filter": false,
+    "calls": [],
+    "messages": []
+  }
+}
