@@ -26,6 +26,7 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
+    namespace 'org.anthony.wolvercotebus'
 }
 
 dependencies {
